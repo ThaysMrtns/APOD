@@ -13,7 +13,10 @@ dadosReq.addEventListener("load", function(){
         let dados = JSON.parse(dadosReq.responseText); //Converti o texto do dadosReq para um objeto json
         console.log(dados);
         //Chamando função afim de exibir o conteúdo da api no meu site
-        exibirSite(dados.copyright, dados.date, dados.hdurl);
+        exibirTopo(dados.copyright, dados.date);
+        exibirImg(dados.hdurl);
+        exibirExplanation(dados.explanation);
+        exibirTitle(dados.title);
     }
 })
 //Entrando na porta para pegar os dados
