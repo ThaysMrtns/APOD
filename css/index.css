@@ -1,0 +1,16 @@
+/*Cabeçalho*/
+.cabecalho-principal{
+    background-color: beige;
+    padding: 10px;
+}
+#titulo{
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Conteúdo*/
+#imagem{
+    width: 40%;
+}
+
+/*Rodapé*/

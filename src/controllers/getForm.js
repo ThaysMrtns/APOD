@@ -4,10 +4,10 @@
 function getForm(dataApi){
     let form1 = new form();
     form1._btn.addEventListener("click", function(){
-        data = form1._date.value;//valor do que eu escrevi
+        /*data = form1._date.value;//valor do que eu escrevi
         dataApi = data;//igualar a data api
         let dataForm = document.write("#imagem-form"); 
         dataApi.url = dataForm.src;
-        console.log(dataApi);
+        console.log(dataApi);*/
     })
 }

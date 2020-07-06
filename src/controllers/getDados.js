@@ -16,7 +16,7 @@ function getDados(){
             console.log(dados);
             //Chamando função afim de exibir o conteúdo da api no meu site
             exibirCopy(dados.copyright);
-            exibirDate(dados.date = "2020/07/02");
+            exibirDate(dados.date);
             exibirImg(dados.hdurl);
             exibirExplanation(dados.explanation);
             exibirTitle(dados.title);

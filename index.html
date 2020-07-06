@@ -1,18 +1,20 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>APOD</title>
     </head>
     <body>
         <div class="cabecalho-principal">
-            <h1>Cabeçalho</h1>
+            <h1 id="titulo">APOD: Picture Day</h1>
         </div>
+         <!--Início do conteúdo principal-->
         <div class="conteudo-princpal">
             <div class="imageDay">
                 <h1 id="title"></h1>
                 <a href="" id="copyright"></a>
                 <p id="date"></p>
-                <img  src="" id="imagem">
+                <img src="" id="imagem">
                 <p id="explanation"></p>
             </div>
             <div class="form-principal">
@@ -22,10 +24,11 @@
                 <img src="" id="imagem-form">
             </div>
         </div>
+        <!--Fim do conteúdo principal-->
         <div class="rodape-principal">
             <h2>Rodapé</h2>   
         </div>
-
+    
     <script src="src/views/exibirDados.js"></script>
     <script src="src/controllers/getDados.js"></script>
     <script src="src/models/modelForm.js"></script>

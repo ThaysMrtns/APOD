@@ -1,9 +1,8 @@
+//O objetivo deste script é exibir os dados da api dentro dos elementos html da página
 
 function exibirCopy(copy){
-    //Pegar elemento do mundo html
-    let copyrightHtm = document.querySelector("#copyright");
-    //Colocar o conteúdo da api dentro do elemento html
-    copyrightHtm.append(copy);
+    let copyrightHtm = document.querySelector("#copyright"); //Pegar elemento do mundo html
+    copyrightHtm.append(copy); //Colocar o conteúdo da api dentro do elemento html
 }
 function exibirDate(data){
     let dateHtm = document.querySelector("#date");
