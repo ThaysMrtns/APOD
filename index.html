@@ -4,13 +4,31 @@
         <title>APOD</title>
     </head>
     <body>
-        <h1 id="title"></h1>
-        <a href="" id="copyright"></a>
-        <p id="date"></p>
-        <img  src="" id="imagem">
-        <p id="explanation"></p>
+        <div class="cabecalho-principal">
+            <h1>Cabeçalho</h1>
+        </div>
+        <div class="conteudo-princpal">
+            <div class="imageDay">
+                <h1 id="title"></h1>
+                <a href="" id="copyright"></a>
+                <p id="date"></p>
+                <img  src="" id="imagem">
+                <p id="explanation"></p>
+            </div>
+            <div class="form-principal">
+                <h3>Selecione uma data para obter a foto referente a data</h3>
+                <input class="form-date" type="date"> 
+                <input class="form-btn" type="button" value="Enviar">
+                <img src="" id="imagem-form">
+            </div>
+        </div>
+        <div class="rodape-principal">
+            <h2>Rodapé</h2>   
+        </div>
 
-    <script src="JS/models/dados.js" ></script>
-    <script src="JS/controllers/exibir.js" ></script>
+    <script src="src/views/exibirDados.js"></script>
+    <script src="src/controllers/getDados.js"></script>
+    <script src="src/models/modelForm.js"></script>
+    <script src="src/controllers/getForm.js"></script>
     </body>
 </html>
