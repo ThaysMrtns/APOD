@@ -7,7 +7,9 @@ function getForm(dataApi){
         /*data = form1._date.value;//valor do que eu escrevi
         dataApi = data;//igualar a data api
         let dataForm = document.write("#imagem-form"); 
-        dataApi.url = dataForm.src;
+        dataApi = dataForm.src;
         console.log(dataApi);*/
+        console.log(typeof dataApi);
     })
 }
+//Nova requisição 
