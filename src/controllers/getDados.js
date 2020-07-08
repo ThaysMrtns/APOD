@@ -2,8 +2,7 @@
 //que foram formadas no exibirDados
 //Maior gambiarra da minha vida
 
-class dados{
-    
+class Dados{
     getDados(){
         let dadosReq = new XMLHttpRequest(); 
         dadosReq.open("GET", "https://api.nasa.gov/planetary/apod?api_key=3PmYMPQvIjm5qI4VGgo5eMBADS41PD4fXoal3h4d", false);
@@ -20,7 +19,7 @@ class dados{
 }
 
 //Iniciando a classe dados
-let pegarDados = new dados();
+let pegarDados = new Dados();
 //Executando o seu método boladíssimo 
 pegarDados.getDados();
 

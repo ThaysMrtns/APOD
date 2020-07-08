@@ -1,15 +1,29 @@
 //O objetivo desse script é instanciar a class form que referência as suas propriedades e
 //executar um evento no button que pega a data selecionada pelo usuário
 
-function getForm(dataApi){
-    let form1 = new form();
-    form1._btn.addEventListener("click", function(){
-        /*data = form1._date.value;//valor do que eu escrevi
-        dataApi = data;//igualar a data api
-        let dataForm = document.write("#imagem-form"); 
-        dataApi = dataForm.src;
-        console.log(dataApi);*/
-        console.log(typeof dataApi);
-    })
+class getImageForm{
+    constructor(){
+
+    } //&date=dateForm
+    getImage(){
+        //let form1 = new form(); //Criou o objeto form1 da class form
+        let btnForm = document.querySelector(".form-btn");
+        let dataForm = document.querySelector(".form-date");
+        btnForm.onclick = function(){
+            event.preventDefault();
+            let dadosReq = new XMLHttpRequest(); 
+            dadosReq.open("GET", "https://api.nasa.gov/planetary/apod?api_key=3PmYMPQvIjm5qI4VGgo5eMBADS41PD4fXoal3h4d&date=${dataForm.value}", false);
+            dadosReq.send();
+
+            let listaDados = JSON.parse(dadosReq.responseText);
+
+            let form1 = new Form();
+            
+            return form1.exibirImagem(listaDados.copyright, listaDados.date, listaDados.hdurl, listaDados.explanation, listaDados.title);
+        }
+    }
 }
+
+let imageForm = new getImageForm();
+imageForm.getImage();
 //Nova requisição 

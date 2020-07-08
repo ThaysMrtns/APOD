@@ -8,13 +8,13 @@ class exibirDados{
         let explanationHtm = document.querySelector("#explanation");
         let titleHtm = document.querySelector("#title");
 
-        let c = copyrightHtm.append(copy); //Inseri dados dentro do elemento html
-        let d = dateHtm.append(data);
-        let i = imgHtm.src = image;
-        let e = explanationHtm.append(explanation);
-        let t = titleHtm.append(title);
+        let copyrightView = copyrightHtm.append(copy); //Inseri dados dentro do elemento html
+        let dateView = dateHtm.append(data);
+        let imgView = imgHtm.src = image;
+        let explanationView = explanationHtm.append(explanation);
+        let titleView = titleHtm.append(title);
 
-        return {c, d, i,e,t}; //Retornando variáveis que inserem os dados da api no mundo html
+        return {copyrightView, dateView, imgView,explanationView,titleView}; //Retornando variáveis que inserem os dados da api no mundo html
     }
 }
 
