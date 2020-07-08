@@ -1,11 +1,25 @@
+body{
+    text-align: center;
+}
+
 /*Cabeçalho*/
 .cabecalho-principal{
+    text-align: left;
     background-color: beige;
     padding: 10px;
+}
+.form-principal{
+    text-align: left;
+    margin-bottom: 20px;
 }
 #titulo{
     font-style: normal;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.imageDay{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
 }
 
 /*Conteúdo*/
